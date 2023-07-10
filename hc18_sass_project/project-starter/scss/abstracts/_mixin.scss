@@ -1,0 +1,9 @@
+// mixin
+
+@mixin flexMix($d, $j: center) {
+    // $j ye default değer atadık
+    display: $d;
+    justify-content: $j;
+    align-items: center;
+  }
+  
