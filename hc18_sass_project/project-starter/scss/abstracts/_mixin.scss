@@ -1,6 +1,6 @@
 // mixin
 
-@mixin flexMix($d, $j:center) {
+@mixin flexMix($d, $j: center) {
     // $j ye default değer atadık
     display: $d;
     justify-content: $j;
@@ -15,3 +15,12 @@
     line-height: $height;
   }
   
+
+  @mixin bgImage($height,$width,$url) {
+    height: $height;
+    width: $width;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url($url);
+  }
